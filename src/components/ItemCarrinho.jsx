@@ -4,10 +4,12 @@ export function ItemCarrinho({ produto }) {
   return (
     <div
       style={{
-        display: "flex",
-        justifyContent: "space-between",
-        padding: "10px",
-        borderBottom: "1px solid #ccc",
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        padding: '12px 16px',
+        borderBottom: '1px solid #e5e7eb',
+        gap: '16px'
       }}
     >
       <div>
