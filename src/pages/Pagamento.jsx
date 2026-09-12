@@ -11,7 +11,7 @@ const pagamentoSchema = z.object({
     .string()
     .transform((val) => val.replace(/\D/g, ""))
     .refine((val) => val.length === 16, {
-      message: "O cartão deve coner exatamente 16 digitos",
+      message: "O cartão deve conter exatamente 16 digitos",
     }),
   validade: z
     .string()
@@ -25,7 +25,8 @@ const pagamentoSchema = z.object({
 });
 
 export function Pagamento() {
-  const { processando, processandoPagamento } = usePagamento();
+  //const { processando, processandoPagamento } = usePagamento();
+  const { processando, processarPagamento } = usePagamento();
 
   const {
     register,
@@ -46,7 +47,8 @@ export function Pagamento() {
       <h2>Pagamento</h2>
       <p style={{ fontWeight: "bold" }}>Total a pagar: R$ {total.toFixed(2)}</p>
 
-      <form onSubmit={handleSubmit(processandoPagamento)}>
+      {/* <form onSubmit={handleSubmit(processandoPagamento)}> */}
+      <form onSubmit={handleSubmit(processarPagamento)}>
         <div style={{ marginBottom: "15px" }}>
           <label htmlFor="titular">Nome do Titular:</label>
           <input
