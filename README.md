@@ -62,3 +62,6 @@ O FinansSys resolve esse problema ao:
 > 📁 **Repositório do Código:** [Acessar Código no GitHub](https://github.com/almirdambroski/Mini-Projeto-Avaliativo-modulo-II)
 
 O **FinansSys** é uma solução de checkout intuitiva e segura desenvolvida para e-commerces...
+
+ ** Link Kanban Trelo
+ (https://trello.com/invite/b/6a0b9baee9cba71e30786a40/ATTI0ae111d199d485726dfd73c712922fa74B89A4E7/mini-projetoavaliativo-avancado01)
