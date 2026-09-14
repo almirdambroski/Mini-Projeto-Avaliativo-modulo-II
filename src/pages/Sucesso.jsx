@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 export function Sucesso() {
   return (
-    <main style={{ textAlign: "center", marginTop: "50px", padding: "20px" }}>
-      <h1 style={{ color: '#28a745' }}>Compra aprovado</h1>
+    <main style={{ textAlign:"center", marginTop:"50px", padding:"20px" }}>
+      <h1 style={{ color:'#28a745' }}>Compra aprovado</h1>
       <p>Obrigado por sua compra. Seu pedido esta sendo preparado.</p>
       <Link
         to="/"

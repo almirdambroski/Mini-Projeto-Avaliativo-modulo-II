@@ -1,17 +1,13 @@
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
-import { Carrinho } from './pages/Carrinho'
-import { Pagamento } from './pages/Pagamento'
-import { Sucesso } from './pages/Sucesso'
-import { Falha } from './pages/Falha'
-
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Carrinho } from "./pages/Carrinho";
+import { Pagamento } from "./pages/Pagamento";
+import { Sucesso } from "./pages/Sucesso";
+import { Falha } from "./pages/Falha";
 
 function App() {
- 
-
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/Mini-Projeto-Avaliativo-modulo-II">
         <Routes>
           <Route path="/" element={<Carrinho />} />
           <Route path="/pagamento" element={<Pagamento />} />
@@ -20,7 +16,7 @@ function App() {
         </Routes>
       </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

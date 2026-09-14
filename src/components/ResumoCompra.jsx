@@ -2,9 +2,9 @@ export function ResumoCompra({ total }) {
   return (
     <div
       style={{
-        marginTop: "20px",
-        padding: "15px",
-        backgroundColor: "#f5f5f5",
+        marginTop:"20px",
+        padding:"15px",
+        backgroundColor:"#f5f5f5",
         borderRadius: "8px",
       }}
     >

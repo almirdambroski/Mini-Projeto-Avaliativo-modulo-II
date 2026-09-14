@@ -16,14 +16,14 @@ export function Carrinho() {
 
   return (
     <main
-      style={{ maxWidth: "600px", margin: "20rem auto 0", padding: "20px" }}
+      style={{ maxWidth:"600px", margin:"20rem auto 0", padding:"20px" }}
     >
       <img 
         src={logoImg} 
         alt="Logo da Loja" 
-        style={{ width: "350px", height: "auto", marginBottom: "20px", borderRadius: "10px", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)" }} 
+        style={{ width:"350px", height:"auto", marginBottom:"20px", borderRadius:"10px", boxShadow:"0 4px 8px rgba(0, 0, 0, 0.1)" }} 
       />
-      <h2 style={{ fontSize: "1.2rem", fontWeight: "bold" }}>
+      <h2 style={{ fontSize:"1.2rem", fontWeight:"bold" }}>
         Sistema de pagamento
       </h2>
       <h1>Seu Carrinho</h1>
@@ -37,15 +37,15 @@ export function Carrinho() {
       <button
         onClick={() => navigate("/pagamento")}
         style={{
-          marginTop: "20px",
-          padding: "12px 24px",
-          fontSize: "1rem",
-          backgroundColor: "#007bff",
-          color: "#fff",
-          border: "none",
-          borderRadius: "6px",
-          cursor: "pointer",
-          width: "100%",
+          marginTop:"20px",
+          padding:"12px 24px",
+          fontSize:"1rem",
+          backgroundColor:"#007bff",
+          color:"#fff",
+          border:"none",
+          borderRadius:"6px",
+          cursor:"pointer",
+          width:"100%",
         }}
       >
         Ir para o pagamento

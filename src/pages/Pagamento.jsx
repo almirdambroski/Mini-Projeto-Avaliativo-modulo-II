@@ -49,16 +49,16 @@ export function Pagamento() {
 
       {/* <form onSubmit={handleSubmit(processandoPagamento)}> */}
       <form onSubmit={handleSubmit(processarPagamento)}>
-        <div style={{ marginBottom: "15px" }}>
+        <div style={{ marginBottom:"15px" }}>
           <label htmlFor="titular">Nome do Titular:</label>
           <input
             id="titular"
             type="text"
             {...register("titular")}
-            style={{ width: "100%", padding: "8px", marginTop: "4px" }}
+            style={{ width: "100%", padding:"8px", marginTop: "4px" }}
           />
           {errors.titular && (
-            <span style={{ color: "red", fontSize: "0.85rem" }}>
+            <span style={{ color:"red", fontSize:"0.85rem" }}>
               {errors.titular.message}
             </span>
           )}
@@ -71,15 +71,15 @@ export function Pagamento() {
             maxLength={19}
             placeholder="0000 0000 0000 0000"
             {...register("numeroCartao")}
-            style={{ width: "100%", padding: "8px", marginTop: "4px" }}
+            style={{ width:"100%", padding:"8px", marginTop:"4px" }}
           />
           {errors.numeroCartao && (
-            <span style={{ color: "red", fontSize: "0.85rem" }}>
+            <span style={{ color:"red", fontSize:"0.85rem" }}>
               {errors.numeroCartao.message}
             </span>
           )}
         </div>
-        <div style={{ display: "flex", gap: "10px", marginBottom: "15px" }}>
+        <div style={{ display:"flex", gap: "10px", marginBottom:"15px" }}>
           <div style={{ flex: 1 }}>
             <label htmlFor="validade">Validade (MM/AA):</label>
             <input
@@ -88,15 +88,15 @@ export function Pagamento() {
               placeholder="MM/AA"
               maxLength={5}
               {...register("validade")}
-              style={{ width: "100%", padding: "8px", marginTop: "4px" }}
+              style={{ width:"100%", padding: "8px", marginTop:"4px" }}
             />
             {errors.validade && (
-              <span style={{ color: "red", fontSize: "0.85rem" }}>
+              <span style={{ color:"red", fontSize:"0.85rem" }}>
                 {errors.validade.message}
               </span>
             )}
           </div>
-          <div style={{ flex: 1 }}>
+          <div style={{ flex:1 }}>
             <label htmlFor="cvv">CVV:</label>
             <input
               id="cvv"
@@ -104,10 +104,10 @@ export function Pagamento() {
               maxLength={3}
               placeholder="123"
               {...register("cvv")}
-              style={{ width: "100%", padding: "8px", marginTop: "4px" }}
+              style={{ width:"100%", padding:"8px", marginTop:"4px" }}
             />
             {errors.cvv && (
-              <span style={{ color: "red", fontSize: "0.85rem" }}>
+              <span style={{ color:"red", fontSize:"0.85rem" }}>
                 {errors.cvv.message}
               </span>
             )}
@@ -117,13 +117,13 @@ export function Pagamento() {
           type="submit"
           disabled={processando}
           style={{
-            width: "100%",
-            padding: "12px",
-            fontSize: "1rem",
+            width:"100%",
+            padding:"12px",
+            fontSize:"1rem",
             backgroundColor: processando ? "#6c757d" : "#28a745",
-            color: "#fff",
-            border: "none",
-            borderRadius: "6px",
+            color:"#fff",
+            border:"none",
+            borderRadius:"6px",
             cursor: processando ? "not-allowed" : "pointer",
           }}
         >
