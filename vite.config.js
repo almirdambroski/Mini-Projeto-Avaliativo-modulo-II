@@ -12,6 +12,7 @@ import { defineConfig } from 'vite'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/Mini-Projeto-Avaliativo-modulo-II/',
+ // base: '/Mini-Projeto-Avaliativo-modulo-II/',
+    base: '/Mini-Projeto-Avaliativo-modulo-II/',
 })
 
